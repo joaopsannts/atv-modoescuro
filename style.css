@@ -1,18 +1,17 @@
 * {
-    max-width: 800px;
     box-sizing: content-box;
     margin: 0;
 }
 
 body {
-    max-width: 800px;
     font-family: "Noto sans";
     line-height: 1.5rem;
+    max-height: 150vh;
+
 }
 
 /*Header*/
 .container {
-    max-width: 800px;
     padding: 60px;
     background-color: rgb(192, 188, 188);
     border: 1px solid black;
@@ -30,11 +29,6 @@ body {
     font-size: 1rem;
 }
 
-h5 {
-    margin-right: 400px;
-    color: black;
-}
-
 .navbar-nav {
     display: flex;
     list-style: none;
@@ -43,6 +37,11 @@ h5 {
 .navbar-nav button {
     cursor: pointer;
     transition: all 0.2ms;
+}
+
+.user {
+    text-decoration: none;
+    color: black;
 }
 
 /* Main */
@@ -60,7 +59,7 @@ h5 {
     justify-content: center;
     width: 150px;
     height: 150px;
-    border-radius: 150px;
+    border-radius: 50%;
     margin-block-end: 10px;
 }
 
@@ -82,6 +81,12 @@ h5 {
     margin-block-start: 10px;
 }
 
+.item {
+    list-style: none;
+    padding: 0;
+    margin-right: 78px;
+}
+
 .nome {
     font-weight: bolder;
     font-size: 1.1rem
@@ -90,12 +95,17 @@ h5 {
 
 /* footer */
 footer {
-    bottom: -150px;
-    position: relative;
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-block-start: 210px;
     padding: 20px;
     background-color: rgb(57, 58, 67);
     color: white;
+}
+
+.modo-escuro {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
 }
